@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso en planeta Marte o Júpiter</title>
+</head>
+<body>
+    <h1>Peso en planeta Marte o Júpiter</h1>
+    <p>Dado que la gravedad en los planetas es diferente, entonces el peso de una persona/objeto tambien es diferente.</p>
+    <script>
+        var peso_usuario = prompt("¿Cual es tu peso?");
+        var planeta = prompt("Elige tu planeta: 1 es Marte, 2 es Júpiter");
+        var peso = parseInt(peso_usuario);
+        var gravedad_tierra = 9.8;
+        var gravedad_marte = 3.7;
+        var gravedad_jupiter = 24.8;
+        var peso_en;
+        peso_en = peso * gravedad_marte / gravedad_tierra;
+        peso_en = parseInt(peso_en);
+        document.write("Tu peso en marte es: <strong>" + peso_en + " kilos </strong>");
+    </script>
+</body>
+</html>
