@@ -4,6 +4,7 @@ console.log(lienzo);
 var lineas = 30;
 var l = 0
 var yi, xf;
+var xi, yf;
 
 while (l < lineas) {
     yi = 10 * l;
@@ -11,6 +12,12 @@ while (l < lineas) {
     dibujarLinea("gray", 0, yi, xf, 300);
     //l = l+1;
     l++;
+}
+
+for (let l2 = 0; l2 < lineas; l2++) {
+    xi = 10 * l2;
+    yf = 10 * (l2+1);
+    dibujarLinea("#008f39", xi, 0, 300, yf);  
 }
 
 dibujarLinea("#008f39", 88, 100, 200, 200);
