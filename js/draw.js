@@ -1,9 +1,25 @@
 var d = document.getElementById("dibujo");
 var lienzo = d.getContext("2d");
 console.log(lienzo);
+var lineas = 30;
+var l = 0
+var yi, xf;
 
-dibujarLinea("gray", 10, 300, 220, 88);
-dibujarLinea("green", 100, 100, 200, 200);
+while (l < lineas) {
+    yi = 10 * l;
+    xf = 10 * (l+1);
+    dibujarLinea("gray", 0, yi, xf, 300);
+    //l = l+1;
+    l++;
+}
+
+dibujarLinea("#008f39", 88, 100, 200, 200);
+
+dibujarLinea("#008", 1, 1, 1, 300);
+dibujarLinea("#088", 1, 299, 299, 299);
+
+dibujarLinea("#088", 1, 1, 300, 1);
+dibujarLinea("#008", 299, 1, 299, 299);
 
 function dibujarLinea(color, x_inicial, y_inicial, x_final, y_final) {
     lienzo.beginPath();
